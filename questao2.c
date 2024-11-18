@@ -20,8 +20,8 @@ int main()
     int matriz[NMAX][NMAX];
     char c;
     
-    printf("Entre com um número inteiro entre 0 e 100 que será o tamanho de sua matriz quadrada:\n");
-    scanf("%d", &numero);
+	printf("Entre com um número inteiro entre 0 e 100 que será o tamanho de sua matriz quadrada:\n");
+	scanf("%d", &numero);
     printf("\n");
     getchar();
     le_matrizQ(matriz, numero);
@@ -85,7 +85,7 @@ void calcula(int M[][NMAX], int n, char c){
 
         for (int i = 0; i < n; i++){
             for (int j = 0; j < n; j++){
-               if(j >= i){
+               if(j > i){
                     resultado += M[i][j];
                     cont++;
                } 

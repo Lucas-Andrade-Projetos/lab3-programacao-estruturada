@@ -72,5 +72,4 @@ void formata_matriz(int M[][NMAX], int n){
             }  
         }
     }
-
 }
